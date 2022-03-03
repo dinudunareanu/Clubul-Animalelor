@@ -11,12 +11,14 @@
     
     <div class="navbar">
         <p class="logo">logo</p>
-        <div class="navlinks">
+        <div class="navlinks" id="navLinks">
+            <p class="closebtn" onclick="hideMenu()">X</p>
             <a href="">Acasa</a>
             <a href="">Detalii</a>
             <a href="">Contact</a>
             <a class="login" href="">Autentificare</a>
         </div>
+        <p class="menubtn" onclick="showMenu()">Meniu</p>
     </div>
 
     <div class="home">
@@ -25,5 +27,15 @@
         <p>Cauti un prieten pe viata? clubulanimalelor.ro este o platforma care iti<br>prezinta cele mai potrivite optiuni pentru a adopta un suflet fara stapan.</p>
     </div>
 
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+        function hideMenu() {
+            navLinks.style.right = "-220px";
+        }
+    </script>
 </body>
 </html>
