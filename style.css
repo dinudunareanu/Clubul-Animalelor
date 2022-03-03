@@ -52,8 +52,13 @@ body {
     transition: 0s;
 }
 
-.login {
+.loginDesktop {
     font-weight: 600;
+}
+
+.loginTel {
+    font-weight: 600;
+    display: none;
 }
 
 .home {
@@ -104,6 +109,13 @@ body {
         display: block;
         color: #fff;
         padding-right: 15px;
+    }
+
+    .loginTel {
+        display: block;
+    }
+    .loginDesktop {
+        display: none;
     }
 
     .home h1 {
